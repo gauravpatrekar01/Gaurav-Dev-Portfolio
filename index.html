@@ -9,10 +9,17 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- --ink-black: #0d1b2aff; --prussian-blue: #1b263bff; --dusk-blue: #415a77ff;
+    --dusty-denim: #778da9ff; --alabaster-grey: #e0e1ddff; -->
     <title>Portfolio: Gaurav Patrekar</title>
     <style>
+      body {
+        font-family: Montserrat, Tahoma, sans-serif;
+        background-color: #e0e1dd;
+      }
       * {
         margin: 0;
+        padding: 0;
       }
       nav {
         display: flex;
@@ -26,7 +33,7 @@
 
       .lefthead {
         color: antiquewhite;
-        font-size: large;
+        font-size: 1.5rem;
         font-family: Montserrat;
         font-style: Tahoma;
         margin-top: 20px;
@@ -41,6 +48,23 @@
         width: 600px;
         justify-content: space-evenly;
       }
+      .firstsection
+      {
+        display: flex;
+        justify-content:space-around;
+      }
+      .leftsection
+      {
+        width: 50%;
+        margin-top: 100px;
+        padding: 20px;
+      }
+      .rightsection
+      {
+        width: 30%;
+        margin-top: 100px;
+        padding: 20px;
+      }
     </style>
   </head>
   <body>
@@ -50,11 +74,34 @@
         <ul class="righthead">
           <li id="1" href="*">Home</li>
           <li>About</li>
-           <li>Services</li>
+          <li>Services</li>
           <li>Projects</li>
           <li>Contact Me</li>
         </ul>
       </nav>
     </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          <div class="Name">Hello, I’m Gaurav Patrekar.</div>
+          <div class="intro">
+            I am an aspiring software developer passionate about learning and
+            applying technology to solve real-world problems. I enjoy working on
+            projects involving programming, application development, and system
+            logic. This portfolio highlights my skills, academic projects, and
+            hands-on learning journey.
+          </div>
+        </div>
+        <div class="rightsection">
+          <img
+            src="D:\New folder\My Portfolio\Gaurav-Dev-Portfolio\dp.jpg"
+            alt="Gaurav Patrekar"
+            width="300"
+            height="300"
+          />
+        </div>
+      </section>
+      <section class="secondsection"></section>
+    </main>
   </body>
 </html>
