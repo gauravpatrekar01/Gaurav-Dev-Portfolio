@@ -115,20 +115,35 @@
       .leftsection .me img:hover {
         transform: scale(1.05);
         transition: transform 0.3s;
-        box-shadow: #415a77;
+        box-shadow: #050d17;
       }
-      .me img::before {
-        content: "";
-        position: absolute;
-        width: 150%;
-        height: 150%;
-        background: linear-gradient(
-          45deg,
-          transparent,
-          rgba(var(--color-primary-rgb), 0.1),
-          transparent
-        );
-        animation: 2s ease 0s infinite normal none running shimmer;
+      .sectionheading2 #heading2 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 2rem;
+        color: #1b263b;
+      }
+      .secondsection .info {
+        margin-left: 50px;
+        margin-right:50px;
+        margin-top: 20px;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        color: #0d1b2a;
+        text-align: justify;
+      }
+      .secondsection hr {
+        width: 93%;
+        margin-top: 10px;
+        border: 0.3vh solid #132840;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+      .secondsection #heading2:hover {
+        color: #012835;
+        font-weight: 700;
+        transform: scale(1.05);
+        transition: transform 0.3s;
       }
     </style>
   </head>
@@ -187,7 +202,30 @@
           <img src="693.png" alt="developer's Image" />
         </div>
       </section>
-      <section class="secondsection"></section>
+      <section class="secondsection">
+        <div class="sectionheading2">
+          <h2 id="heading2">About Me</h2>
+        </div>
+        <hr />
+        <div class="info">
+          I’m Gaurav Patrekar, a Computer Science Engineering student with a
+          strong interest in building modern, efficient, and user-focused
+          digital solutions. I have a solid foundation in programming, data
+          structures, and problem-solving, and I enjoy turning ideas into
+          practical applications. I have worked on multiple academic and
+          personal projects where I focused on clean code, logical design, and
+          performance optimization. My experience includes working with web
+          technologies, backend logic, and version control systems like Git and
+          GitHub. I am particularly interested in learning and applying new
+          technologies that enhance scalability, usability, and overall system
+          efficiency. I approach every project with curiosity and a growth
+          mindset, constantly aiming to improve my technical skills and
+          understanding of real-world software development practices. I am
+          actively looking for opportunities where I can contribute as a
+          developer, learn from experienced professionals, and grow into a
+          well-rounded software engineer.
+        </div>
+      </section>
     </main>
     <script>
       var typed = new Typed("#element", {
