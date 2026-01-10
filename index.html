@@ -67,7 +67,7 @@
       }
       .leftsection {
         width: 50%;
-        margin-top: 100px;
+        margin-top: 50px;
         padding: 20px;
       }
       .rightsection {
@@ -75,37 +75,62 @@
         margin-top: 90px;
         padding: 20px;
       }
-      .rightsection video {
-        width: 100%;
-        height: 80%;
-        border-radius: 20px;
-        box-shadow: 0;
-      }
       .firstsection .leftsection .Name {
         font-size: 2.5rem;
         font-weight: 600;
         margin-bottom: 20px;
+        margin-top: 50px;
       }
       .purple {
         color: #1b263b;
+      }
+      .purple:hover {
+        color: #415a77;
+        font-weight: 700;
       }
       ul.righthead li a {
         text-decoration: none;
         color: antiquewhite;
         font-size: 1.1rem;
       }
+      .righthead li a:hover {
+        color: #8faed1;
+        font-weight: 700;
+      }
       .logo {
         margin-top: 10px;
         margin-left: 5px;
       }
       #element {
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: #415a77;
         font-weight: 500;
         margin-top: 20px;
       }
+      .leftsection .me img {
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        margin-left: 100px;
+      }
+      .leftsection .me img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s;
+        box-shadow: #415a77;
+      }
+      .me img::before {
+        content: "";
+        position: absolute;
+        width: 150%;
+        height: 150%;
+        background: linear-gradient(
+          45deg,
+          transparent,
+          rgba(var(--color-primary-rgb), 0.1),
+          transparent
+        );
+        animation: 2s ease 0s infinite normal none running shimmer;
+      }
     </style>
-    
   </head>
   <body>
     <header>
@@ -126,8 +151,8 @@
         </div>
         <ul class="righthead">
           <li><a href="index.html">Home</a></li>
-          <li><a href="#">Services</a></li>
           <li><a href="#">About</a></li>
+          <li><a href="#">skills</a></li>
           <li><a href="#">Projects</a></li>
           <li><a href="#">Contact Me</a></li>
         </ul>
@@ -136,6 +161,14 @@
     <main>
       <section class="firstsection">
         <div class="leftsection">
+          <div class="me">
+            <img
+              src="pp.jpg"
+              alt="Gaurav's Image"
+              width="300px"
+              height="300px"
+            />
+          </div>
           <div class="Name">
             Hello, I’m <span class="purple">Gaurav Patrekar!</span>
           </div>
@@ -158,9 +191,11 @@
     </main>
     <script>
       var typed = new Typed("#element", {
-        strings: ["Web Developer", "&amp; Java Enthusiast", "&amp; Python Developer", "&amp; Database Manager"],
+        strings: ["Web Developer", "App Developer", "Tech Enthusiast"],
         loop: true,
         typeSpeed: 50,
+        cursorChar: "|",
+        backSpeed: 25,
       });
     </script>
   </body>
