@@ -182,14 +182,59 @@
       }
       .Education {
         display: flex;
+        justify-content: space-evenly;
+        margin-top: 30px;
         text-align: center;
         width: 100%;
         flex-direction: row;
       }
-      .Education h3 {
-        margin-top: 40px;
-        color: #1b263b;
+      #eduhead {
         text-align: center;
+        margin-top: 50px;
+        font-size: 2rem;
+        color: #1b263b;
+      }
+      .Education .left {
+        width: 50%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .Education .left img {
+        border: 2px solid #132840;
+        border-radius: 20px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .Education .right {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+      }
+      .Education .right h4 {
+        margin-top: 10px;
+        font-size: 1.8rem;
+        color: #0d1b2a;
+      }
+      .Education .right p {
+        margin-top: 10px;
+        font-size: 1.2rem;
+        color: #0d1b2a;
+      }
+      .Education .right .descript {
+        font-size: 1rem;
+        text-align: left;
+        color: #000000;
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+      }
+      #edhr {
+        width: 50%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 0.3vh solid #132840;
       }
     </style>
   </head>
@@ -299,24 +344,36 @@
           developer, learn from experienced professionals, and grow into a
           well-rounded software engineer.
         </div>
-
+        <h3 id="eduhead"><span>Education</span></h3>
+        <hr id="edhr" />
         <div class="Education">
-          <h3><span class="college">Education</span></h3>
           <div class="left">
-          <img
-            src="college.png"
-            alt="college image"
-            width="300px"
-            height="400px"
-          /></div>
+            <img
+              src="college.png"
+              alt="college image"
+              width="300px"
+              height="400px"
+            />
+          </div>
           <div class="right">
-          <h4 class="colname">
-            Kolhapur Institute of Technology's College of Engineering, Kolhapur
-          </h4>
-          <p>
-            Bachelor of Technology in Computer Science and Business Systems
-            (2024 - 2028)
-          </p></div>
+            <h4 class="colname">
+              Kolhapur Institute of Technology's <br />College of Engineering,
+              Kolhapur
+            </h4>
+            <p>
+              Bachelor of Technology in<br />
+              Computer Science and Business Systems (2024 - 2028)
+            </p>
+            <p class="descript">Current CGPA: <span style="color: #bd0808;">9.2/10</span></p>
+            <p class="descript">
+              Relevant Coursework: <br>Data Structures and Algorithms, Database
+              Management Systems (DBMS), Object-Oriented Programming (OOP), Web
+              Development, Operating Systems, Computer Networks, Software
+              Engineering, Statistics and Probability, Data Analysis, Business
+              Systems and Process Management, Fundamentals of Blockchain
+              Technology
+            </p>
+          </div>
         </div>
       </section>
     </main>
