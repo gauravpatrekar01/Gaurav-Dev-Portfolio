@@ -142,15 +142,44 @@
         font-size: 2rem;
         color: #1b263b;
       }
-      .secondsection .info {
-        margin-left: 50px;
-        margin-right: 50px;
-        margin-top: 30px;
-        font-size: 1rem;
-        line-height: 1.4;
-        color: #0d1b2a;
-        text-align: justify;
+      .info {
+        margin: 4rem auto;
+        padding: 2.5rem 3rem;
+
+        background: #ffffff;
+        border-radius: 18px;
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.07);
       }
+
+      .info p {
+        font-size: 1.05rem;
+        line-height: 1.85;
+        color: #1b263b;
+        text-align: justify;
+        margin-bottom: 1.5rem;
+        position: relative;
+      }
+
+      .info p::before {
+        content: "";
+        position: absolute;
+        left: -1.5rem;
+        top: 0.4rem;
+        height: 70%;
+        width: 3px;
+        background: linear-gradient(to bottom, #1b263b, #415a77, transparent);
+        border-radius: 3px;
+      }
+
+      .info p:first-child {
+        font-size: 1.1rem;
+        font-weight: 500;
+      }
+
+      .info p:hover {
+        color: #0d1b2a;
+      }
+
       .secondsection hr {
         width: 50%;
         margin: auto;
@@ -359,11 +388,11 @@
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background: #e0e0e0;
+        background: #767676;
       }
 
       .dot.filled {
-        background: #4f46e5; /* Accent color */
+        background: #102360; /* Accent color */
       }
 
       .evidence {
