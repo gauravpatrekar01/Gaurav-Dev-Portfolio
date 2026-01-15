@@ -404,7 +404,7 @@
         width: 50%;
         margin: auto;
         margin-top: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         border: 0.3vh solid #132840;
       }
 
@@ -444,6 +444,11 @@
         margin-right: 10px;
       }
 
+      .button:hover {
+         transform: scale(1.02);
+        transition: transform 0.3s;
+      }
+
       .projectcard .button a {
         text-decoration: none;
         color: white;
@@ -459,11 +464,25 @@
         transform: scale(1.02);
         transition: transform 0.3s;
       }
+
+      .projects p {
+        margin-bottom: 20px;
+        color: #1b263b;
+      }
+
+      .contact hr {
+        width: 50%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border: 0.3vh solid #132840;
+      }
+
     </style>
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="home">
         <div class="leftheaddiv">
           <img
             class="logo"
@@ -475,11 +494,11 @@
         </div>
         <div class="Hname">
           <h class="lefthead"
-            ><a class="home" href="index.html">Gaurav's Portfolio</a></h
+            ><a class="home" href="#home">Gaurav's Portfolio</a></h
           >
         </div>
         <ul class="righthead">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="#home">Home</a></li>
           <li><a href="#secondsectionid">About</a></li>
           <li><a href="#eduhead">Education</a></li>
           <li><a href="#skills">skills</a></li>
@@ -489,7 +508,7 @@
       </nav>
     </header>
     <main>
-      <section class="firstsection" id="home">
+      <section class="firstsection">
         <div class="leftsection">
           <div class="me">
             <img
@@ -749,6 +768,10 @@
       <section class="projects" id="projects">
         <h3 id="skillhead"><span>Projects</span></h3>
         <hr>
+          <P style="text-align: center;">
+            Here are some of the projects I have worked on, showcasing my skills
+            and practical experience in software development:
+          </P>
         <div class="projectgrid">
           <div class="projectcard">
             <h3>Salon Management System</h3>
@@ -763,7 +786,7 @@
               <a
                 href="https://github.com/gauravpatrekar01/Salon_Management_System"
               >
-                View Project
+                View on Github
               </a>
             </button>
             <button class="button">
@@ -784,7 +807,7 @@
               aspiring software developer.
             </p>
             <button class="button">
-              <a href="#home">View Project</a>
+              <a href="https://github.com/gauravpatrekar01/Gaurav-Dev-Portfolio">View on Github</a>
             </button>
             <button class="button">
               <a
@@ -808,12 +831,68 @@
               <a
                 href="https://github.com/gauravpatrekar01/trackify-expense-tracker"
               >
-                View Project
+                View on Github
               </a>
             </button>
         </div>
       </section>
-      <section class="contact" id="contact"></section>
+      <section class="contact" id="contact">
+        <h3 id="skillhead"><span>Contact Me</span></h3>
+        <hr>
+        <form
+          action="https://formspree.io/f/mayvlrgn"
+          method="POST"
+          style="text-align: center; margin-top: 20px"
+        >
+          <label for="name" style="font-size: 1.1rem; color: #1b263b"
+            >Name:</label
+          >
+          <br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            style="width: 300px; height: 30px; margin-top: 10px"
+          />
+          <br /><br />
+          <label for="email" style="font-size: 1.1rem; color: #1b263b"
+            >Email:</label
+          >
+          <br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            style="width: 300px; height: 30px; margin-top: 10px"
+          />
+          <br /><br />
+          <label for="message" style="font-size: 1.1rem; color: #1b263b"
+            >Message:</label
+          >
+          <br />
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            style="width: 300px; margin-top: 10px"
+          ></textarea>
+          <br /><br />
+          <button
+            type="submit"
+            class="button"
+            style="width: 100px; height: 35px"
+          >
+            Send
+          </button>
+        <p style="text-align: center; font-size: 1.1rem; color: #1b263b">
+          Feel free to reach out to me for any inquiries, collaborations, or
+          opportunities. You can contact me via email at
+          <a href="mailto:gauravpatrekar01@gmail.com">gauravpatrekar01@gmail.com</a>
+        </p>
+      </section>
     </main>
     <script>
       var typed = new Typed("#element", {
