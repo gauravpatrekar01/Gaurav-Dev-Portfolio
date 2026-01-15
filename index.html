@@ -547,14 +547,14 @@
       color: #1b263b;
     }
 
-    .contactform input{
+    .contactform input {
       border: 1px solid #ccc;
       border-radius: 6px;
       padding: 8px;
       font-size: 1rem;
     }
 
-    .contactform textarea{
+    .contactform textarea {
       border: 1px solid #ccc;
       border-radius: 6px;
       padding: 8px;
@@ -562,11 +562,25 @@
       resize: vertical;
     }
 
-    .contactform input:hover, .contactform textarea:hover {
+    .contactform input:hover,
+    .contactform textarea:hover {
       border-color: #415a77;
       box-shadow: 0 0 5px rgba(65, 90, 119, 0.5);
       transition: all 0.3s ease;
     }
+
+    .gototopbutton {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    #gototop {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
   </style>
 </head>
 
@@ -884,7 +898,7 @@
       <h3 id="skillhead"><span>Contact Me</span></h3>
       <hr>
       <div class="contactform">
-        <img src="contact.png" alt="Contact Image"/>
+        <img src="contact.png" alt="Contact Image" />
         <form action="https://formspree.io/f/xpqqwjpy" method="POST" style="text-align: center; margin-top: 20px">
           <label for="name" style="font-size: 1.1rem; color: #1b263b">Name:</label>
           <br />
@@ -918,6 +932,23 @@
       backSpeed: 25,
     });
   </script>
+
+  <div class="gototopbutton">
+
+    <button id="gototop">
+      <a href="#home" >
+        <img src="up-arrow.png" alt="Go to Top" width="40px" height="40px" />
+      </a>
+    </button>
+
+  </div>
+
+  <footer>
+    <p style="text-align: center; padding: 20px; background-color: #0b0635; color: white; margin-top:10px;">
+      &copy; 2026 Gaurav Patrekar. All rights reserved.
+    </p>
+  </footer>
+
 </body>
 
 </html>
