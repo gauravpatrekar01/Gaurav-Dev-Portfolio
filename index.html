@@ -399,6 +399,29 @@
         border-radius: 20px;
         color: #333;
       }
+
+      .projects hr {
+        width: 50%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 0.3vh solid #132840;
+      }
+
+      .projectgrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 24px;
+        padding: 20px;
+      }
+
+      .projectcard {
+        background: #fff;
+        padding: 24px;
+        border-radius: 14px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
     </style>
   </head>
   <body>
@@ -429,7 +452,7 @@
       </nav>
     </header>
     <main>
-      <section class="firstsection">
+      <section class="firstsection" id="home">
         <div class="leftsection">
           <div class="me">
             <img
@@ -555,7 +578,11 @@
               Kolhapur<br /><span
                 style="font-size: 0.9rem; color: #415a77; font-style: italic"
                 >(Affiliated to Shivaji University, Kolhapur)</span
-              ><button class="button" id="LearnCollege" href="https://www.kitcoek.in/">
+              ><button
+                class="button"
+                id="LearnCollege"
+                href="https://www.kitcoek.in/"
+              >
                 Learn More
               </button>
             </h4>
@@ -670,9 +697,7 @@
                 <span class="dot"></span>
               </div>
 
-              <p class="evidence">
-                Implemented CSV file Handling in S.M.S.
-              </p>
+              <p class="evidence">Implemented CSV file Handling in S.M.S.</p>
 
               <div class="tags">
                 <span>PostgreSQL</span>
@@ -686,8 +711,71 @@
 
       <section class="projects" id="projects">
         <h3 id="skillhead"><span>Projects</span></h3>
-        <hr />
-        
+        <hr>
+        <div class="projectgrid">
+          <div class="projectcard">
+            <h3>Salon Management System</h3>
+            <img src="SMS.png" alt="Salon Management System Image" width="50%" />
+            <p>
+              A comprehensive salon management system developed using Python. It
+              streamlines appointment scheduling, customer management, and
+              inventory tracking, enhancing operational efficiency for salon
+              owners.
+            </p>
+            <button class="button">
+              <a
+                href="https://github.com/gauravpatrekar01/Salon_Management_System"
+              >
+                View Project
+              </a>
+            </button>
+            <button class="button">
+              <a
+                href="https://www.linkedin.com/posts/gaurav-patrekar-20470333a_just-launched-belladesk-salon-management-activity-7400146880313098240-dBnF?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFUtiWQBeZ1qN7A6_IYLkJFLRqTdH8u_Fg0"
+              >
+                View on LinkedIn
+              </a>
+            </button>
+          </div>
+          </div>
+          <div class="projectgrid">
+          <div class="projectcard">
+            <h3>Personal Portfolio Website</h3>
+            <img src="PW.png" alt="Personal Portfolio Website Image" width="50%" />
+            <p>
+              A personal portfolio website built using HTML, CSS, and JavaScript
+              to showcase my skills, projects, and academic journey as an
+              aspiring software developer.
+            </p>
+            <button class="button">
+              <a href="#home">View Project</a>
+            </button>
+            <button class="button">
+              <a
+                href="#"
+              >
+                View on LinkedIn
+              </a>
+            </button>
+        </div>
+        </div>
+        <div class="projectgrid">
+        <div class="projectcard">
+            <h3>Smart Budget Management App</h3>
+            <p>
+              A budget management application designed to help users track their
+              expenses, set financial goals, and manage budgets effectively.
+              Built using Java and integrated with a SQLite database for data
+              storage.
+            </p>
+            <button class="button">
+              <a
+                href="https://github.com/gauravpatrekar01/trackify-expense-tracker"
+              >
+                View Project
+              </a>
+            </button>
+        </div>
       </section>
       <section class="contact" id="contact"></section>
     </main>
