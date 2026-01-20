@@ -150,19 +150,18 @@ ul.righthead li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 15px rgba(217, 4, 118, 0.793);
+  box-shadow: 0 0 15px rgb(255, 173, 217);
 }
 
 .leftsection .me img {
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  margin-left: 100px;
+  box-shadow: 0 0 10px rgb(32, 181, 171);
 }
 
 .leftsection .me img:hover {
   transform: scale(1.05);
   transition: transform 0.3s;
-  box-shadow: #050d17;
+  box-shadow: #cad3dd;
 }
 
 .sectionheading2 #heading2 {
