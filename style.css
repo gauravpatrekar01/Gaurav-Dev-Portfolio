@@ -99,11 +99,11 @@ nav {
 }
 
 .purple {
-  color: #1b263b;
+  color: #3fa5ef;
 }
 
 .purple:hover {
-  color: #415a77;
+  color: #11890d;
   font-weight: 700;
 }
 
@@ -125,7 +125,7 @@ ul.righthead li a {
 
 #element {
   font-size: 2rem;
-  color: #aa711d;
+  color: #f6ff00;
   font-weight: 600;
   margin-top: 0px;
 }
@@ -140,6 +140,17 @@ ul.righthead li a {
   color: #bd0808;
   transform: scale(1.05);
   transition: transform 0.3s;
+}
+
+.circle {
+  width: 370px;
+  height: 370px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3fa5ef, #0d1b2a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 15px rgba(217, 4, 118, 0.793);
 }
 
 .leftsection .me img {
