@@ -211,6 +211,26 @@ ul.righthead li a {
   color: #0d1b2a;
 }
 
+.secondsection {
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    #e2e8f0,
+    #7facf6,
+    #0f172a
+  );
+  background-color: #e2e8f0;
+  padding: 60px 8%;
+}
+
+.education {
+  background: conic-gradient(
+    from 180deg at 50% 50%,
+    #e2e8f0,
+    #7facf6,
+    #0f172a
+  );
+}
+
 .secondsection hr {
   width: 50%;
   margin: auto;
@@ -349,6 +369,10 @@ ul.righthead li a {
   margin-top: 10px;
   margin-bottom: 10px;
   border: 0.3vh solid #132840;
+}
+
+.skills{
+  background-color: #0f172a;
 }
 
 #skillhead {
